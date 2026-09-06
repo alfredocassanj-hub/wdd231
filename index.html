@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description" content="WDD 231 course home page for Alfredo Cassanje, a Web Frontend Development student from Angola.">
+<meta name="author" content="Alfredo Cassanje">
+
+<title>WDD 231 | Alfredo Cassanje</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!-- JavaScript -->
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/courses.js" defer></script>
+
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <div class="profile">
+            <img src="images/logo.svg" alt="WDD 231 course logo">
+            <span>Alfredo Cassanje</span>
+        </div>
+
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+    </div>
+
+    <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="#" id="chamber-link">Chamber</a>
+        <a href="#" id="final-link">Final</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Home</h1>
+
+    <div class="home-grid">
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Alfredo Cassanje. I am from Angola and I am studying
+                software development and web technologies. I enjoy learning
+                programming, building websites, and developing solutions that
+                can help people and organizations.
+            </p>
+
+            <p>
+                This course is an opportunity for me to improve my skills in
+                HTML, CSS, JavaScript, responsive web design, accessibility,
+                and modern web development.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+
+            <img
+                src="images/alfredo.jpg"
+                alt="Alfredo Cassanje"
+                class="student-photo"
+            >
+        </section>
+
+    </div>
+
+    <section class="card certificate">
+
+        <h2>Web and Computer Programming Certificate</h2>
+
+        <div class="course-buttons">
+
+            <button id="all-courses" type="button">
+                All Courses
+            </button>
+
+            <button id="wdd-courses" type="button">
+                WDD Courses
+            </button>
+
+            <button id="cse-courses" type="button">
+                CSE Courses
+            </button>
+
+        </div>
+
+        <p class="credits">
+            Total Credits:
+            <span id="total-credits">0</span>
+        </p>
+
+        <div id="course-container" class="course-grid"></div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+
+        <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+        >
+            GitHub
+        </a>
+
+        <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+        >
+            LinkedIn
+        </a>
+
+        <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            Facebook
+        </a>
+
+    </div>
+
+    <p>
+        &copy; <span id="currentyear"></span>
+        Alfredo Cassanje | Angola
+    </p>
+
+    <p id="lastModified">
+        Last Modified:
+    </p>
+
+</footer>
+
+</body>
+</html>

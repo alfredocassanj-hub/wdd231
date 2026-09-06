@@ -1,0 +1,319 @@
+/* ==============================
+RESET
+============================== */
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+font-family: "Roboto", sans-serif;
+line-height: 1.5;
+}
+
+body {
+margin: 0;
+color: #222;
+background-color: #f4f6f8;
+}
+
+/* ==============================
+HEADER
+============================== */
+
+header {
+background-color: #12355b;
+color: #ffffff;
+}
+
+.header-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+}
+
+.profile {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+
+.profile img {
+width: 55px;
+height: 55px;
+object-fit: contain;
+}
+
+.profile span {
+font-size: 1.15rem;
+font-weight: 700;
+}
+
+/* ==============================
+HAMBURGER BUTTON
+============================== */
+
+#menu {
+display: block;
+padding: 0.25rem 0.5rem;
+border: 2px solid transparent;
+border-radius: 5px;
+background: transparent;
+color: #ffffff;
+font-size: 2rem;
+line-height: 1;
+cursor: pointer;
+}
+
+#menu:hover,
+#menu:focus {
+border-color: #ffffff;
+outline: none;
+}
+
+/* ==============================
+NAVIGATION
+============================== */
+
+nav {
+display: none;
+flex-direction: column;
+background-color: #0b2545;
+}
+
+nav.open {
+display: flex;
+}
+
+nav a {
+padding: 0.9rem 1rem;
+color: #ffffff;
+text-align: center;
+text-decoration: none;
+font-weight: 500;
+border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav a:hover {
+background-color: #1d70a2;
+}
+
+nav a.active {
+background-color: #1d70a2;
+font-weight: 700;
+}
+
+/* ==============================
+MAIN
+============================== */
+
+main {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+h1 {
+margin: 0 0 1rem;
+color: #12355b;
+font-size: 2rem;
+}
+
+h2 {
+margin: 0;
+padding: 0.75rem 1rem;
+background-color: #12355b;
+color: #ffffff;
+font-size: 1.15rem;
+}
+
+/* ==============================
+HOME SECTIONS
+============================== */
+
+.home-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+.card {
+overflow: hidden;
+background-color: #ffffff;
+border: 1px solid #d6dce1;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+margin: 0;
+padding: 0.75rem 1rem;
+}
+
+/* ==============================
+STUDENT PHOTO
+============================== */
+
+.student-photo {
+display: block;
+width: calc(100% - 2rem);
+max-width: 350px;
+height: auto;
+margin: 1rem auto;
+border-radius: 5px;
+object-fit: cover;
+}
+
+.photo-placeholder {
+min-height: 220px;
+margin: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #dce6ef;
+border: 2px dashed #12355b;
+color: #12355b;
+font-weight: 700;
+}
+
+/* ==============================
+CERTIFICATE
+============================== */
+
+.certificate {
+margin-top: 1rem;
+}
+
+.course-buttons {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+padding: 1rem;
+}
+
+.course-buttons button {
+min-height: 44px;
+padding: 0.75rem 1rem;
+border: none;
+border-radius: 5px;
+background-color: #12355b;
+color: #ffffff;
+font-family: inherit;
+font-weight: 700;
+cursor: pointer;
+}
+
+.course-buttons button:hover,
+.course-buttons button:focus {
+background-color: #1d70a2;
+outline: 2px solid #12355b;
+outline-offset: 2px;
+}
+
+/* ==============================
+CREDITS
+============================== */
+
+.credits {
+margin: 0;
+padding: 0.75rem 1rem;
+text-align: center;
+font-weight: 700;
+}
+
+#total-credits {
+color: #12355b;
+}
+
+/* ==============================
+COURSE CARDS
+============================== */
+
+.course-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 0.75rem;
+padding: 1rem;
+}
+
+.course {
+padding: 1rem;
+border: 2px solid #12355b;
+border-radius: 8px;
+background-color: #f8fafc;
+text-align: center;
+}
+
+.course h3 {
+margin: 0 0 0.5rem;
+font-size: 1.1rem;
+}
+
+.course p {
+margin: 0.25rem;
+padding: 0;
+}
+
+.course.completed {
+background-color: #d9f2df;
+border-color: #218739;
+}
+
+.course.completed::after {
+content: "✓ Completed";
+display: block;
+margin-top: 0.5rem;
+color: #176b2c;
+font-weight: 700;
+}
+
+/* ==============================
+FOOTER
+============================== */
+
+footer {
+margin-top: 2rem;
+padding: 2rem 1rem;
+background-color: #12355b;
+color: #ffffff;
+text-align: center;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.social-links a {
+color: #ffffff;
+font-weight: 700;
+text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+text-decoration: underline;
+}
+
+footer p {
+margin: 0.5rem;
+}
+
+#lastModified {
+font-size: 0.9rem;
+}
+
+/* ==============================
+ACCESSIBILITY
+============================== */
+
+a:focus-visible,
+button:focus-visible {
+outline: 3px solid #f4c95d;
+outline-offset: 2px;
+}

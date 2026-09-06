@@ -1,0 +1,191 @@
+/* =========================================
+LARGER SCREENS
+WDD 231 - Course Home Page
+========================================= */
+
+@media screen and (min-width: 700px) {
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+#menu {
+    display: none;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    background-color: #0b2545;
+}
+
+nav a {
+    padding: 1rem 1.5rem;
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #1d70a2;
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+
+/* =====================================
+   ABOUT + PHOTO
+===================================== */
+
+.home-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.home-grid .card {
+    min-height: 100%;
+}
+
+.student-photo {
+    width: calc(100% - 2rem);
+    max-width: 300px;
+    height: 250px;
+    margin: 1rem auto;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* =====================================
+   CERTIFICATE
+===================================== */
+
+.certificate {
+    margin-top: 1.5rem;
+}
+
+.course-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.course-buttons button {
+    min-width: 150px;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.course-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   COURSE CARDS
+===================================== */
+
+.course-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.course {
+    min-height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.course:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    margin-top: 3rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.social-links {
+    gap: 2rem;
+}
+
+
+}
+
+/* =========================================
+EXTRA LARGE SCREENS
+========================================= */
+
+@media screen and (min-width: 1000px) {
+
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.home-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.course-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.course {
+    min-height: 120px;
+}
+
+
+}
