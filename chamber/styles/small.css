@@ -219,6 +219,10 @@ main {
   font-size: 0.85rem;
 }
 
+.site-footer h2 {
+  color: #f0f0f0;
+}
+
 .footer-social {
   display: flex;
   gap: 1rem;
