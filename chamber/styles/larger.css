@@ -1,0 +1,51 @@
+/* ===== Tablet and up (700px) ===== */
+@media screen and (min-width: 700px) {
+  .site-header {
+    flex-wrap: nowrap;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+    width: auto;
+    order: 2;
+  }
+
+  #navigation ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  #navigation a {
+    border-top: none;
+    padding: 0.4rem 0;
+  }
+
+  .directory.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-footer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+/* ===== Desktop and up (1000px) ===== */
+@media screen and (min-width: 1000px) {
+  .directory.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .directory-toolbar h1 {
+    font-size: 1.6rem;
+  }
+}

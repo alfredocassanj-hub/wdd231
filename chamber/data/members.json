@@ -1,0 +1,74 @@
+{
+  "companies": [
+    {
+      "name": "Café Atlântico",
+      "address": "Rua Cerveira Pinto, 12, Benguela",
+      "phone": "+244 923 456 789",
+      "website": "https://cafeatlantico.example.com",
+      "image": "cafe-atlantico.svg",
+      "membership": 3,
+      "category": "Restaurant",
+      "founded": 2015
+    },
+    {
+      "name": "Benguela Logistics",
+      "address": "Avenida da Independência, 45, Benguela",
+      "phone": "+244 912 345 678",
+      "website": "https://benguelalogistics.example.com",
+      "image": "benguela-logistics.svg",
+      "membership": 2,
+      "category": "Logistics and Transportation",
+      "founded": 2008
+    },
+    {
+      "name": "Lobito Construction",
+      "address": "Avenida Norton de Matos, 45, Benguela",
+      "phone": "+244 934 567 890",
+      "website": "https://lobitoconstruction.example.com",
+      "image": "lobito-construction.svg",
+      "membership": 2,
+      "category": "Construction",
+      "founded": 2010
+    },
+    {
+      "name": "Kwanza Technology",
+      "address": "Rua Comandante Che Guevara, 23, Benguela",
+      "phone": "+244 945 678 901",
+      "website": "https://kwanzatechnology.example.com",
+      "image": "kwanza-technology.svg",
+      "membership": 3,
+      "category": "Technology",
+      "founded": 2019
+    },
+    {
+      "name": "Baía Commercial Group",
+      "address": "Avenida 4 de Fevereiro, 90, Benguela",
+      "phone": "+244 956 789 012",
+      "website": "https://baiacommercial.example.com",
+      "image": "baia-commercial.svg",
+      "membership": 3,
+      "category": "Commerce",
+      "founded": 2012
+    },
+    {
+      "name": "Morena Hotel",
+      "address": "Praia Morena, Benguela",
+      "phone": "+244 967 890 123",
+      "website": "https://morenahotel.example.com",
+      "image": "morena-hotel.svg",
+      "membership": 2,
+      "category": "Hospitality",
+      "founded": 2005
+    },
+    {
+      "name": "Benguela Agro",
+      "address": "Estrada Nacional 100, Benguela",
+      "phone": "+244 978 901 234",
+      "website": "https://benguelaagro.example.com",
+      "image": "benguela-agro.svg",
+      "membership": 1,
+      "category": "Agriculture",
+      "founded": 2017
+    }
+  ]
+}
