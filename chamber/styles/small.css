@@ -1,3 +1,8 @@
+/* ==========================================================
+   Benguela Chamber of Commerce - small.css (mobile first)
+   Shared by directory.html and index.html
+   ========================================================== */
+
 /* ===== Colour scheme / variables ===== */
 :root {
   --color-primary: #2b6777;
@@ -8,6 +13,9 @@
   --color-text: #222831;
   --color-muted: #5c6b73;
   --color-border: #d9e2e1;
+  --color-cta: #f2b134;
+  --color-gold: #8a6508;   /* white text on it: contrast 5.3:1 */
+  --color-silver: #6b747a; /* white text on it: contrast 4.8:1 */
   --radius: 10px;
 }
 
@@ -19,6 +27,19 @@ body {
 h1, h2, h3 {
   color: var(--color-primary-dark);
   line-height: 1.2;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible,
+.hero :focus-visible {
+  outline-color: #fff;
 }
 
 /* ===== Header ===== */
@@ -101,13 +122,14 @@ h1, h2, h3 {
   color: #ffe1ec;
 }
 
-/* ===== Main / directory toolbar ===== */
+/* ===== Main ===== */
 main {
   padding: 1rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+/* ===== Directory page ===== */
 .directory-toolbar {
   display: flex;
   align-items: center;
@@ -136,7 +158,6 @@ main {
   color: #fff;
 }
 
-/* ===== Directory / member cards ===== */
 .directory {
   display: grid;
   grid-template-columns: 1fr;
@@ -190,8 +211,8 @@ main {
 }
 
 .badge.member-1 { background-color: var(--color-muted); }
-.badge.member-2 { background-color: #8c8c8c; }
-.badge.member-3 { background-color: #b8860b; }
+.badge.member-2 { background-color: var(--color-silver); }
+.badge.member-3 { background-color: var(--color-gold); }
 
 .member-card p {
   font-size: 0.9rem;
@@ -207,6 +228,187 @@ main {
   grid-column: 1 / -1;
   text-align: center;
   color: var(--color-muted);
+}
+
+/* ===== Home page (index.html) ===== */
+
+/* Layout: one column on mobile (larger.css adds the columns) */
+.home {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Hero image + call to action */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.15));
+}
+
+.hero-content h1 {
+  margin: 0;
+  max-width: 20ch;
+  font-size: 1.5rem;
+  color: #fff; /* beats the global h1 colour */
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  background-color: var(--color-cta);
+  color: #1a1a1a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #fff;
+}
+
+/* Events and weather boxes */
+.events,
+.weather {
+  padding: 1rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+  margin: 0 0 0.75rem;
+}
+
+.events ul,
+#forecast {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.events li,
+#forecast li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.events li:last-child,
+#forecast li:last-child {
+  border-bottom: 0;
+}
+
+.events time {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+/* Weather */
+.weather-now {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+#weather-desc {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.weather h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+#forecast li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Member spotlights */
+#spotlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.spotlight-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.spotlight-card h3,
+.spotlight-card p {
+  margin: 0;
+}
+
+.spotlight-card .tagline {
+  color: var(--color-muted);
+}
+
+.spotlight-card address {
+  font-style: normal;
+}
+
+.spotlight-card img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.spotlight-card a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.spotlight-card .level {
+  font-weight: 700;
+}
+
+.spotlight-card.gold {
+  border-top-color: var(--color-gold);
+}
+
+.spotlight-card.gold .level {
+  color: var(--color-gold);
+}
+
+.spotlight-card.silver {
+  border-top-color: var(--color-silver);
+}
+
+.spotlight-card.silver .level {
+  color: var(--color-silver);
 }
 
 /* ===== Footer ===== */

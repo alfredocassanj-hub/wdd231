@@ -49,3 +49,37 @@
     font-size: 1.6rem;
   }
 }
+
+/* ==============================
+   HOME PAGE (chamber/index.html)
+   Larger screens: append to the end of styles/larger.css
+   If larger.css already uses a different breakpoint, change 700px
+   ============================== */
+
+@media (min-width: 700px) {
+
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  /* Hero and spotlights use the full width, events and weather sit side by side */
+  .hero,
+  .spotlights {
+    grid-column: 1 / -1;
+  }
+
+  .hero img {
+    height: 24rem;
+  }
+
+  .hero-content {
+    padding: 2rem 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+}
