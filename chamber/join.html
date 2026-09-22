@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Benguela Chamber of Commerce | Join</title>
+
+  <meta
+    name="description"
+    content="Apply to join the Benguela Chamber of Commerce and discover membership opportunities for businesses and organizations."
+  >
+
+  <meta name="author" content="Alfredo Cassanje">
+
+  <!-- Open Graph / Facebook -->
+
+  <meta
+    property="og:title"
+    content="Benguela Chamber of Commerce | Join"
+  >
+
+  <meta
+    property="og:description"
+    content="Apply for membership in the Benguela Chamber of Commerce and connect with the local business community."
+  >
+
+  <meta
+    property="og:image"
+    content="https://alfredocassanj-hub.github.io/wdd231/chamber/images/cafe-atlantico.svg"
+  >
+
+  <meta
+    property="og:url"
+    content="https://alfredocassanj-hub.github.io/wdd231/chamber/join.html"
+  >
+
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+
+  <link
+    rel="icon"
+    href="icons/favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- ==============================
+       HEADER
+       ============================== -->
+
+  <header class="site-header">
+
+    <div class="header-brand">
+
+      <img
+        src="icons/favicon.svg"
+        alt="Benguela Chamber of Commerce logo"
+        class="logo"
+        width="48"
+        height="48"
+      >
+
+      <div class="brand-text">
+
+        <p class="site-title">
+          Benguela Chamber of Commerce
+        </p>
+
+        <p class="site-subtitle">
+          Business • Community • Growth
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button
+      id="menu"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+    </button>
+
+
+    <!-- Main Navigation -->
+
+    <nav id="navigation" aria-label="Main navigation">
+
+      <ul>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="directory.html">
+            Directory
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="join.html"
+            class="active"
+            aria-current="page"
+          >
+            Join
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==============================
+       MAIN
+       ============================== -->
+
+  <main>
+
+    <section class="join-heading">
+
+      <h1>
+        Join the Benguela Chamber of Commerce
+      </h1>
+
+      <p>
+        Become part of the Benguela business community
+        and discover opportunities to connect, grow, and
+        promote your organization.
+      </p>
+
+    </section>
+
+
+    <!-- ==============================
+         JOIN CONTENT
+         ============================== -->
+
+    <div class="join-container">
+
+
+      <!-- ==============================
+           MEMBERSHIP FORM
+           ============================== -->
+
+      <form
+        class="membership-form"
+        method="get"
+        action="thankyou.html"
+      >
+
+        <h2>
+          Membership Application
+        </h2>
+
+
+        <!-- First Name -->
+
+        <label>
+          First Name
+
+          <input
+            type="text"
+            name="firstName"
+            title="Enter your first name"
+            autocomplete="given-name"
+            required
+          >
+
+        </label>
+
+
+        <!-- Last Name -->
+
+        <label>
+          Last Name
+
+          <input
+            type="text"
+            name="lastName"
+            title="Enter your last name"
+            autocomplete="family-name"
+            required
+          >
+
+        </label>
+
+
+        <!-- Organizational Title -->
+
+        <label>
+          Organizational Title
+
+          <input
+            type="text"
+            name="organizationTitle"
+            title="Enter your title within the organization"
+            autocomplete="organization-title"
+            pattern="[A-Za-zÀ-ÿ\s-]{7,}"
+          >
+
+        </label>
+
+
+        <!-- Email -->
+
+        <label>
+          Email Address
+
+          <input
+            type="email"
+            name="email"
+            title="Enter your email address"
+            autocomplete="email"
+            placeholder="example@email.com"
+            required
+          >
+
+        </label>
+
+
+        <!-- Mobile Phone -->
+
+        <label>
+          Mobile Phone Number
+
+          <input
+            type="tel"
+            name="phone"
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+            required
+          >
+
+        </label>
+
+
+        <!-- Organization -->
+
+        <label>
+          Business / Organization Name
+
+          <input
+            type="text"
+            name="organization"
+            title="Enter your business or organization name"
+            autocomplete="organization"
+            required
+          >
+
+        </label>
+
+
+        <!-- Membership Level -->
+
+        <label>
+          Membership Level
+
+          <select
+            name="membership"
+            title="Select a membership level"
+            required
+          >
+
+            <option
+              value=""
+              disabled
+              selected
+            >
+              Select a membership level
+            </option>
+
+            <option value="np">
+              NP Membership
+            </option>
+
+            <option value="bronze">
+              Bronze Membership
+            </option>
+
+            <option value="silver">
+              Silver Membership
+            </option>
+
+            <option value="gold">
+              Gold Membership
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <!-- Organization Description -->
+
+        <label>
+          Business / Organization Description
+
+          <textarea
+            name="description"
+            title="Enter a description of your business or organization"
+            rows="5"
+          ></textarea>
+
+        </label>
+
+
+        <!-- Timestamp -->
+
+        <input
+          type="hidden"
+          name="timestamp"
+          id="timestamp"
+        >
+
+
+        <!-- Submit -->
+
+        <input
+          type="submit"
+          value="Apply for Membership"
+        >
+
+      </form>
+
+
+      <!-- ==============================
+           MEMBERSHIP CARDS
+           ============================== -->
+
+      <section
+        class="membership-levels"
+        aria-label="Membership levels"
+      >
+
+        <!-- NP -->
+
+        <article class="membership-card">
+
+          <h2>
+            NP Membership
+          </h2>
+
+          <p>
+            For non-profit organizations.
+          </p>
+
+          <a href="#np-modal">
+            Learn More
+          </a>
+
+        </article>
+
+
+        <!-- Bronze -->
+
+        <article class="membership-card">
+
+          <h2>
+            Bronze Membership
+          </h2>
+
+          <p>
+            Essential benefits for growing businesses.
+          </p>
+
+          <a href="#bronze-modal">
+            Learn More
+          </a>
+
+        </article>
+
+
+        <!-- Silver -->
+
+        <article class="membership-card">
+
+          <h2>
+            Silver Membership
+          </h2>
+
+          <p>
+            Additional benefits and promotional opportunities.
+          </p>
+
+          <a href="#silver-modal">
+            Learn More
+          </a>
+
+        </article>
+
+
+        <!-- Gold -->
+
+        <article class="membership-card">
+
+          <h2>
+            Gold Membership
+          </h2>
+
+          <p>
+            Premium benefits and greater visibility.
+          </p>
+
+          <a href="#gold-modal">
+            Learn More
+          </a>
+
+        </article>
+
+      </section>
+
+    </div>
+
+
+    <!-- ==============================
+         MEMBERSHIP MODALS
+         ============================== -->
+
+    <dialog id="np-modal">
+
+      <h2>
+        NP Membership
+      </h2>
+
+      <p>
+        NP Membership is available for non-profit
+        organizations with no membership fee.
+      </p>
+
+      <ul>
+        <li>No membership fee</li>
+        <li>Access to chamber events</li>
+        <li>Networking opportunities</li>
+        <li>Community participation</li>
+      </ul>
+
+      <button
+        type="button"
+        class="close-modal"
+      >
+        Close
+      </button>
+
+    </dialog>
+
+
+    <dialog id="bronze-modal">
+
+      <h2>
+        Bronze Membership
+      </h2>
+
+      <p>
+        Bronze Membership provides essential benefits
+        for growing businesses.
+      </p>
+
+      <ul>
+        <li>Access to chamber events</li>
+        <li>Networking opportunities</li>
+        <li>Business training opportunities</li>
+        <li>Member discounts</li>
+      </ul>
+
+      <button
+        type="button"
+        class="close-modal"
+      >
+        Close
+      </button>
+
+    </dialog>
+
+
+    <dialog id="silver-modal">
+
+      <h2>
+        Silver Membership
+      </h2>
+
+      <p>
+        Silver Membership provides additional promotional
+        and business benefits.
+      </p>
+
+      <ul>
+        <li>All Bronze Membership benefits</li>
+        <li>Additional training opportunities</li>
+        <li>Event discounts</li>
+        <li>Business advertising opportunities</li>
+      </ul>
+
+      <button
+        type="button"
+        class="close-modal"
+      >
+        Close
+      </button>
+
+    </dialog>
+
+
+    <dialog id="gold-modal">
+
+      <h2>
+        Gold Membership
+      </h2>
+
+      <p>
+        Gold Membership provides premium benefits
+        and greater visibility.
+      </p>
+
+      <ul>
+        <li>All Silver Membership benefits</li>
+        <li>Premium advertising opportunities</li>
+        <li>Home page spotlight opportunities</li>
+        <li>Priority event promotion</li>
+      </ul>
+
+      <button
+        type="button"
+        class="close-modal"
+      >
+        Close
+      </button>
+
+    </dialog>
+
+  </main>
+
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+
+  <footer class="site-footer">
+
+    <!-- Contact Information -->
+
+    <div class="footer-info">
+
+      <h2>
+        Benguela Chamber of Commerce
+      </h2>
+
+      <address>
+        Rua Cerveira Pinto, 100<br>
+        Benguela, Angola
+      </address>
+
+      <p>
+        Phone:
+        <a href="tel:+244900000000">
+          +244 900 000 000
+        </a>
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:info@benguelachamber.example">
+          info@benguelachamber.example
+        </a>
+      </p>
+
+    </div>
+
+
+    <!-- Social Media -->
+
+    <div class="footer-social">
+
+      <h2>
+        Connect With Us
+      </h2>
+
+      <a
+        href="https://github.com/alfredocassanj-hub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/alfredo-cassanje-0b2067173/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://www.facebook.com/alfredo.chanegro"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      </a>
+
+    </div>
+
+
+    <!-- Development Information -->
+
+    <div class="footer-dev">
+
+      <p>
+        <strong>
+          Alfredo Cassanje
+        </strong>
+      </p>
+
+      <p>
+        WDD 231 - Web Frontend Development
+      </p>
+
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Benguela Chamber of Commerce
+      </p>
+
+      <p>
+        Last Modification:
+        <span id="lastModified"></span>
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
+
