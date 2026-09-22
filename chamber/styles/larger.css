@@ -88,39 +88,21 @@
    JOIN PAGE - LARGE SCREENS
    ========================================= */
 
-.join-container {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
+@media screen and (min-width: 700px) {
 
+    .join-container {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
 
-/* =========================================
-   MEMBERSHIP FORM
-   ========================================= */
+    .membership-form {
+        width: auto;
+        max-width: none;
+    }
 
-.membership-form {
-    width: auto;
-    max-width: none;
-}
-
-
-/* =========================================
-   MEMBERSHIP CARDS
-   ========================================= */
-
-.membership-levels {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-
-/* =========================================
-   JOIN HEADING
-   ========================================= */
-
-.join-heading {
-    margin-top: 2rem;
+    .join-heading {
+        margin-top: 2rem;
+    }
 }
