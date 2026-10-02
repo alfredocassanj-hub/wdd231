@@ -1,14 +1,13 @@
 function displayFeaturedServices(services) {
 
     featuredServices.innerHTML = "";
-
-    const categoryImages = {
-        Plumbing: "images/plumbing.jpg",
-        Electrical: "images/electrical.jpg",
-        Cleaning: "images/cleaning.jpg",
-        Construction: "images/construction.jpg",
-        Transport: "images/transport.jpg"
-    };
+const categoryImages = {
+    Plumbing: "images/plumbing.jpg",
+    Electrical: "images/electrical.jpg",
+    Cleaning: "images/cleaning.jpg",
+    Construction: "images/construction.jpg",
+    Transport: "images/transport.jpg"
+};
 
     services.forEach((provider) => {
 
