@@ -106,25 +106,25 @@ function getCategoryImage(category) {
     const images = {
 
         Plumbing:
-            "images/Plumbing.jpg",
+            "images/plumbing.jpg",
 
         Electrical:
-            "images/Electrical.jpg",
+            "images/electrical.jpg",
 
         Cleaning:
-            "images/Cleaning.jpg",
+            "images/cleaning.jpg",
 
         Construction:
-            "images/Construction.jpg",
+            "images/construction.jpg",
 
         Transport:
-            "images/Transport.jpg"
+            "images/transport.jpg"
 
     };
 
     return (
         images[category] ||
-        "images/Plumbing.jpg"
+        "images/plumbing.jpg"
     );
 
 }
