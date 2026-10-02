@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "name": "Carlos Manuel",
+        "service": "Plumber",
+        "category": "Plumbing",
+        "location": "Luanda",
+        "description": "Residential plumbing, water pipes and bathroom maintenance.",
+        "phone": "+244 900 000 001",
+        "price": "From 8,000 Kz",
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "João Pedro",
+        "service": "Electrician",
+        "category": "Electrical",
+        "location": "Luanda",
+        "description": "Electrical installation, repairs and home maintenance.",
+        "phone": "+244 900 000 002",
+        "price": "From 10,000 Kz",
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "name": "Maria José",
+        "service": "Cleaning Professional",
+        "category": "Cleaning",
+        "location": "Benguela",
+        "description": "Home, apartment and office cleaning services.",
+        "phone": "+244 900 000 003",
+        "price": "From 7,000 Kz",
+        "rating": 4.9
+    },
+    {
+        "id": 4,
+        "name": "Paulo António",
+        "service": "Construction Worker",
+        "category": "Construction",
+        "location": "Benguela",
+        "description": "Construction, renovation and general building services.",
+        "phone": "+244 900 000 004",
+        "price": "From 15,000 Kz",
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "name": "Ana Cristina",
+        "service": "Electrician",
+        "category": "Electrical",
+        "location": "Huíla",
+        "description": "Residential electrical maintenance and installation.",
+        "phone": "+244 900 000 005",
+        "price": "From 9,000 Kz",
+        "rating": 4.8
+    },
+    {
+        "id": 6,
+        "name": "Mateus João",
+        "service": "Plumber",
+        "category": "Plumbing",
+        "location": "Huambo",
+        "description": "Water pipes, bathrooms and plumbing maintenance.",
+        "phone": "+244 900 000 006",
+        "price": "From 8,500 Kz",
+        "rating": 4.5
+    },
+    {
+        "id": 7,
+        "name": "José António",
+        "service": "House Painter",
+        "category": "Construction",
+        "location": "Luanda",
+        "description": "Interior and exterior painting for houses and offices.",
+        "phone": "+244 900 000 007",
+        "price": "From 12,000 Kz",
+        "rating": 4.7
+    },
+    {
+        "id": 8,
+        "name": "Teresa Manuel",
+        "service": "Cleaning Professional",
+        "category": "Cleaning",
+        "location": "Luanda",
+        "description": "Professional cleaning for homes and commercial spaces.",
+        "phone": "+244 900 000 008",
+        "price": "From 7,500 Kz",
+        "rating": 4.9
+    },
+    {
+        "id": 9,
+        "name": "António Domingos",
+        "service": "Electrician",
+        "category": "Electrical",
+        "location": "Cabinda",
+        "description": "Electrical troubleshooting, installations and repairs.",
+        "phone": "+244 900 000 009",
+        "price": "From 11,000 Kz",
+        "rating": 4.6
+    },
+    {
+        "id": 10,
+        "name": "Rui Francisco",
+        "service": "Plumber",
+        "category": "Plumbing",
+        "location": "Benguela",
+        "description": "Water installations, pipe repairs and bathroom services.",
+        "phone": "+244 900 000 010",
+        "price": "From 8,000 Kz",
+        "rating": 4.7
+    },
+    {
+        "id": 11,
+        "name": "Sandra Maria",
+        "service": "Home Cleaner",
+        "category": "Cleaning",
+        "location": "Huambo",
+        "description": "Home cleaning and organization services.",
+        "phone": "+244 900 000 011",
+        "price": "From 6,500 Kz",
+        "rating": 4.8
+    },
+    {
+        "id": 12,
+        "name": "Manuel Pedro",
+        "service": "Masonry Worker",
+        "category": "Construction",
+        "location": "Huíla",
+        "description": "Masonry, walls, floors and renovation services.",
+        "phone": "+244 900 000 012",
+        "price": "From 14,000 Kz",
+        "rating": 4.5
+    },
+    {
+        "id": 13,
+        "name": "Daniel José",
+        "service": "Moving Service",
+        "category": "Transport",
+        "location": "Luanda",
+        "description": "Local moving and transportation assistance.",
+        "phone": "+244 900 000 013",
+        "price": "From 20,000 Kz",
+        "rating": 4.6
+    },
+    {
+        "id": 14,
+        "name": "Cláudia Teresa",
+        "service": "Office Cleaning",
+        "category": "Cleaning",
+        "location": "Benguela",
+        "description": "Scheduled cleaning services for offices and businesses.",
+        "phone": "+244 900 000 014",
+        "price": "From 10,000 Kz",
+        "rating": 4.9
+    },
+    {
+        "id": 15,
+        "name": "Fernando Luís",
+        "service": "Electrical Technician",
+        "category": "Electrical",
+        "location": "Huambo",
+        "description": "Electrical maintenance and equipment installation.",
+        "phone": "+244 900 000 015",
+        "price": "From 10,500 Kz",
+        "rating": 4.7
+    },
+    {
+        "id": 16,
+        "name": "Mário Sebastião",
+        "service": "Water System Technician",
+        "category": "Plumbing",
+        "location": "Cabinda",
+        "description": "Water systems, pumps and residential plumbing.",
+        "phone": "+244 900 000 016",
+        "price": "From 13,000 Kz",
+        "rating": 4.6
+    },
+    {
+        "id": 17,
+        "name": "Helena Sofia",
+        "service": "Renovation Professional",
+        "category": "Construction",
+        "location": "Luanda",
+        "description": "Home renovation and improvement projects.",
+        "phone": "+244 900 000 017",
+        "price": "From 18,000 Kz",
+        "rating": 4.8
+    },
+    {
+        "id": 18,
+        "name": "Carlos Alberto",
+        "service": "Transport Provider",
+        "category": "Transport",
+        "location": "Benguela",
+        "description": "Small cargo and local transportation services.",
+        "phone": "+244 900 000 018",
+        "price": "From 15,000 Kz",
+        "rating": 4.7
+    }
+]

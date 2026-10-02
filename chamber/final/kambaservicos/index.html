@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>KubaTA | Find Services and Professionals</title>
+
+<meta
+    name="description"
+    content="KubaTA connects customers with local professionals and service providers in Angola."
+>
+
+<meta name="author" content="Alfredo Cassanje">
+
+<!-- Open Graph -->
+<meta
+    property="og:title"
+    content="KubaTA | Find Services and Professionals"
+>
+<meta
+    property="og:description"
+    content="Find trusted service providers and professionals through KubaTA."
+>
+<meta property="og:type" content="website">
+<meta
+    property="og:image"
+    content="images/kubata-social-preview.jpg"
+>
+
+<link rel="icon" href="images/favicon.svg">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="module" src="js/main.js"></script>
+
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+
+<div class="container header-content">
+
+    <a href="index.html" class="logo" aria-label="KubaTA Home">
+        Kuba<span>TA</span>
+    </a>
+
+    <button
+        class="menu-button"
+        id="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+    >
+        ☰
+    </button>
+
+    <nav
+        class="site-nav"
+        id="site-nav"
+        aria-label="Main navigation"
+    >
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</div>
+
+
+</header>
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                Your service. Your professional.
+            </span>
+
+            <h1>
+                Find the service you need.
+            </h1>
+
+            <p>
+                KubaTA is a simple place where customers can discover
+                professionals and service providers can connect with
+                people who need their services.
+            </p>
+
+            <form
+                class="hero-search"
+                id="hero-search"
+                action="services.html"
+                method="get"
+            >
+
+                <label for="hero-search-input">
+                    Search for a service
+                </label>
+
+                <div class="search-row">
+
+                    <input
+                        type="search"
+                        id="hero-search-input"
+                        name="search"
+                        placeholder="Example: plumber"
+                    >
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="hero-box">
+
+            <div class="hero-box-icon" aria-hidden="true">
+                K
+            </div>
+
+            <h2>
+                Welcome to KubaTA
+            </h2>
+
+            <p>
+                A home for professionals and customers.
+            </p>
+
+            <a
+                href="services.html"
+                class="secondary-button"
+            >
+                Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Explore
+            </span>
+
+            <h2>
+                Popular Categories
+            </h2>
+
+            <p>
+                Find professionals according to the type of service
+                you need.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a
+                href="services.html?category=Plumbing"
+                class="category-card"
+            >
+                <span
+                    class="category-icon"
+                    aria-hidden="true"
+                >
+                    PL
+                </span>
+
+                <h3>
+                    Plumbing
+                </h3>
+
+                <p>
+                    Water and plumbing services.
+                </p>
+            </a>
+
+
+            <a
+                href="services.html?category=Electrical"
+                class="category-card"
+            >
+                <span
+                    class="category-icon"
+                    aria-hidden="true"
+                >
+                    EL
+                </span>
+
+                <h3>
+                    Electrical
+                </h3>
+
+                <p>
+                    Electrical installation and repairs.
+                </p>
+            </a>
+
+
+            <a
+                href="services.html?category=Cleaning"
+                class="category-card"
+            >
+                <span
+                    class="category-icon"
+                    aria-hidden="true"
+                >
+                    CL
+                </span>
+
+                <h3>
+                    Cleaning
+                </h3>
+
+                <p>
+                    Home and office cleaning.
+                </p>
+            </a>
+
+
+            <a
+                href="services.html?category=Construction"
+                class="category-card"
+            >
+                <span
+                    class="category-icon"
+                    aria-hidden="true"
+                >
+                    CO
+                </span>
+
+                <h3>
+                    Construction
+                </h3>
+
+                <p>
+                    Construction and renovation.
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED SERVICES -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Professionals
+            </span>
+
+            <h2>
+                Featured Services
+            </h2>
+
+            <p>
+                Explore some of the professionals available on KubaTA.
+            </p>
+
+        </div>
+
+        <div
+            id="featured-services"
+            class="service-grid"
+            aria-live="polite"
+        >
+
+            <p class="loading-message">
+                Loading services...
+            </p>
+
+        </div>
+
+        <div class="center-button">
+
+            <a
+                href="services.html"
+                class="primary-button"
+            >
+                View All Services
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROVIDER CTA -->
+
+<section class="provider-section">
+
+    <div class="container provider-content">
+
+        <div>
+
+            <span class="section-label light-label">
+                For Professionals
+            </span>
+
+            <h2>
+                Are you a service provider?
+            </h2>
+
+            <p>
+                Join KubaTA and make your services easier to discover
+                by customers.
+            </p>
+
+        </div>
+
+        <a
+            href="contact.html"
+            class="white-button"
+        >
+            Join KubaTA
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+
+
+<div class="container footer-grid">
+
+    <div>
+
+        <a
+            href="index.html"
+            class="footer-logo"
+        >
+            KubaTA
+        </a>
+
+        <p>
+            A home where customers and service providers meet.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h2>
+            Quick Links
+        </h2>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a href="attribution.html">
+            Attributions
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h2>
+            Connect
+        </h2>
+
+        <a
+            href="#"
+            aria-label="KubaTA Facebook"
+        >
+            Facebook
+        </a>
+
+        <a
+            href="#"
+            aria-label="KubaTA Instagram"
+        >
+            Instagram
+        </a>
+
+        <a
+            href="#"
+            aria-label="KubaTA WhatsApp"
+        >
+            WhatsApp
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        &copy; <span id="current-year"></span> KubaTA |
+        Alfredo Cassanje
+    </p>
+
+</div>
+
+
+</footer>
+
+</body>
+</html>

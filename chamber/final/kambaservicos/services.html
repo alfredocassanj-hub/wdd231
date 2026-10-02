@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KubaTA | Services</title>
+
+    <meta
+        name="description"
+        content="Search and explore service providers available through KubaTA."
+    >
+
+    <meta name="author" content="Alfredo Cassanje">
+
+    <meta property="og:title" content="KubaTA Services">
+    <meta
+        property="og:description"
+        content="Find professionals and services through KubaTA."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KubaTA | Services">
+    <meta property="og:description" content="Search and explore service providers available through KubaTA.">
+    <meta property="og:image" content="images/kubata-social-preview.jpg">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/services.js"></script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            Kuba<span>TA</span>
+        </a>
+
+        <button
+            class="menu-button"
+            id="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html" class="active">
+                Services
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="section-label">
+                KubaTA Directory
+            </span>
+
+            <h1>
+                Find a Professional
+            </h1>
+
+            <p>
+                Search by service, category, or location.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="filter-panel">
+
+                <div class="form-group">
+
+                    <label for="service-search">
+                        Search
+                    </label>
+
+                    <input
+                        type="search"
+                        id="service-search"
+                        placeholder="Search by name or service..."
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="category-filter">
+                        Category
+                    </label>
+
+                    <select id="category-filter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="Plumbing">
+                            Plumbing
+                        </option>
+
+                        <option value="Electrical">
+                            Electrical
+                        </option>
+
+                        <option value="Cleaning">
+                            Cleaning
+                        </option>
+
+                        <option value="Construction">
+                            Construction
+                        </option>
+
+                        <option value="Transport">
+                            Transport
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location-filter">
+                        Location
+                    </label>
+
+                    <select id="location-filter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="Luanda">
+                            Luanda
+                        </option>
+
+                        <option value="Benguela">
+                            Benguela
+                        </option>
+
+                        <option value="Huíla">
+                            Huíla
+                        </option>
+
+                        <option value="Huambo">
+                            Huambo
+                        </option>
+
+                        <option value="Cabinda">
+                            Cabinda
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="results-bar">
+
+                <p id="results-count">
+                    Loading services...
+                </p>
+
+                <button
+                    type="button"
+                    id="favorites-only"
+                    class="outline-button"
+                >
+                    Show Favorites
+                </button>
+
+            </div>
+
+
+            <div
+                id="services-container"
+                class="service-grid"
+            >
+                <p>
+                    Loading services...
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODAL -->
+
+    <dialog
+        id="service-modal"
+        class="service-modal"
+        aria-labelledby="modal-title"
+    >
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                id="modal-close"
+                class="modal-close"
+                aria-label="Close service details"
+            >
+                &times;
+            </button>
+
+            <div id="modal-body"></div>
+
+        </div>
+
+    </dialog>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="footer-logo">
+                KubaTA
+            </a>
+
+            <p>
+                A home where customers and service providers meet.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h2>Quick Links</h2>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="attribution.html">
+                Attributions
+            </a>
+
+        </div>
+
+        <div>
+
+            <h2>Connect</h2>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span> KubaTA |
+            Alfredo Cassanje
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
