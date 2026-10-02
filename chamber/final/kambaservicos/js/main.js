@@ -1,86 +1,14 @@
-/* ==========================================
-   KUBATA
-   MAIN JAVASCRIPT
-========================================== */
-
-const menuButton = document.querySelector("#menu-button");
-const siteNav = document.querySelector("#site-nav");
-const currentYear = document.querySelector("#current-year");
-const featuredServices = document.querySelector("#featured-services");
-
-/* ==========================================
-   HAMBURGER MENU
-========================================== */
-
-if (menuButton && siteNav) {
-    menuButton.addEventListener("click", () => {
-        const isOpen = siteNav.classList.toggle("open");
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            isOpen.toString()
-        );
-
-        menuButton.setAttribute(
-            "aria-label",
-            isOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-        );
-
-        menuButton.textContent = isOpen ? "✕" : "☰";
-    });
-}
-
-/* ==========================================
-   CURRENT YEAR
-========================================== */
-
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
-}
-
-/* ==========================================
-   LOAD FEATURED SERVICES
-========================================== */
-
-async function loadServices() {
-
-    if (!featuredServices) {
-        return;
-    }
-
-    try {
-
-        const response = await fetch("data/services.json");
-
-        if (!response.ok) {
-            throw new Error("Unable to load services data.");
-        }
-
-        const services = await response.json();
-
-        displayFeaturedServices(services.slice(0, 6));
-
-    } catch (error) {
-
-        console.error("Error loading services:", error);
-
-        featuredServices.innerHTML = `
-            <p class="loading-message">
-                Sorry, the services could not be loaded.
-            </p>
-        `;
-    }
-}
-
-/* ==========================================
-   DISPLAY FEATURED SERVICES
-========================================== */
-
 function displayFeaturedServices(services) {
 
     featuredServices.innerHTML = "";
+
+    const categoryImages = {
+        Plumbing: "images/plumbing.jpg",
+        Electrical: "images/electrical.jpg",
+        Cleaning: "images/cleaning.jpg",
+        Construction: "images/construction.jpg",
+        Transport: "images/transport.jpg"
+    };
 
     services.forEach((provider) => {
 
@@ -88,7 +16,17 @@ function displayFeaturedServices(services) {
 
         card.classList.add("service-card");
 
+        const image = categoryImages[provider.category] || "images/plumbing.jpg";
+
         card.innerHTML = `
+            <img
+                src="${image}"
+                alt="${provider.category} service - ${provider.service}"
+                loading="lazy"
+                width="600"
+                height="400"
+            >
+
             <span class="service-category">
                 ${provider.category}
             </span>
@@ -132,5 +70,3 @@ function displayFeaturedServices(services) {
         featuredServices.appendChild(card);
     });
 }
-
-loadServices();
