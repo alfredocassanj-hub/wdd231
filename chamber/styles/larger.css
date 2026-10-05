@@ -52,8 +52,6 @@
 
 /* ==============================
    HOME PAGE (chamber/index.html)
-   Larger screens: append to the end of styles/larger.css
-   If larger.css already uses a different breakpoint, change 700px
    ============================== */
 
 @media (min-width: 700px) {
@@ -90,19 +88,62 @@
 
 @media screen and (min-width: 700px) {
 
-    .join-container {
-        display: grid;
-        grid-template-columns: 1.4fr 1fr;
-        gap: 2rem;
-        align-items: start;
-    }
+  .join-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
 
-    .membership-form {
-        width: auto;
-        max-width: none;
-    }
+  .membership-form {
+    width: auto;
+    max-width: none;
+  }
 
-    .join-heading {
-        margin-top: 2rem;
-    }
+  .join-heading {
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================
+   DISCOVER PAGE (medium and large)
+   ========================================= */
+
+/* Medium: 641px to 1024px */
+@media (min-width: 641px) {
+  #discover-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "card1 card1 card2"
+      "card3 card4 card4"
+      "card5 card5 card6"
+      "card7 card8 card8";
+  }
+
+  .card figure {
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  /* Hover effect (not applied on mobile) */
+  .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1) saturate(1.2);
+  }
+}
+
+/* Large: 1025px and above */
+@media (min-width: 1025px) {
+  #discover-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card1 card1 card4 card3"
+      "card5 card6 card7 card7"
+      "card5 card8 card8 card8";
+  }
 }

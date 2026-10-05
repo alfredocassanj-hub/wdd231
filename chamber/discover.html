@@ -5,44 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Benguela Chamber of Commerce | Home</title>
+  <title>Discover Benguela | Benguela Chamber of Commerce</title>
 
   <meta
     name="description"
-    content="Welcome to the Benguela Chamber of Commerce. Discover upcoming events, today's weather, and featured member businesses, and join our business community."
+    content="Discover the attractions, culture and landmarks of Benguela, Angola, and why it is a great place to do business and visit."
   >
 
   <meta name="author" content="Alfredo Cassanje">
 
   <!-- Open Graph / Facebook -->
-  <meta
-    property="og:title"
-    content="Benguela Chamber of Commerce | Home"
-  >
-
-  <meta
-    property="og:description"
-    content="Events, weather, and featured businesses from the Benguela Chamber of Commerce."
-  >
-
-  <meta
-    property="og:image"
-    content="https://alfredocassanj-hub.github.io/wdd231/chamber/images/hero.webp"
-  >
-
-  <meta
-    property="og:url"
-    content="https://alfredocassanj-hub.github.io/wdd231/chamber/index.html"
-  >
-
+  <meta property="og:title" content="Discover Benguela | Benguela Chamber of Commerce">
+  <meta property="og:description" content="Explore eight places of interest in Benguela, Angola.">
+  <meta property="og:image" content="https://alfredocassanj-hub.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://alfredocassanj-hub.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
-  <link
-    rel="icon"
-    href="icons/favicon.svg"
-    type="image/svg+xml"
-  >
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
 
   <!-- Google Fonts (Roboto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,8 +37,7 @@
   <!-- JavaScript -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/spotlights.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -86,7 +65,7 @@
         </p>
 
         <p class="site-subtitle">
-          Business • Community • Growth
+          Business &bull; Community &bull; Growth
         </p>
 
       </div>
@@ -111,11 +90,7 @@
       <ul>
 
         <li>
-          <a
-            href="index.html"
-            class="active"
-            aria-current="page"
-          >
+          <a href="index.html">
             Home
           </a>
         </li>
@@ -133,7 +108,11 @@
         </li>
 
         <li>
-          <a href="discover.html">
+          <a
+            href="discover.html"
+            class="active"
+            aria-current="page"
+          >
             Discover
           </a>
         </li>
@@ -148,99 +127,15 @@
        MAIN
        ============================== -->
 
-  <main class="home">
+  <main>
 
-    <!-- Hero image with call to action -->
-    <section class="hero" aria-labelledby="hero-title">
+    <h2 class="page-title">Discover Benguela</h2>
 
-      <img
-        src="images/hero.webp"
-        alt="Businesses and waterfront in Benguela"
-        width="1200"
-        height="600"
-      >
+    <div id="visit-message" class="visit-message" role="status" hidden></div>
 
-      <div class="hero-content">
+    <div id="discover-cards"></div>
 
-        <h1 id="hero-title">
-          Welcome to the Benguela Chamber of Commerce
-        </h1>
-
-        <a class="cta" href="join.html">
-          Join the Chamber
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- Current events -->
-    <section class="events" aria-labelledby="events-title">
-
-      <h2 id="events-title">
-        Upcoming Events
-      </h2>
-
-      <ul>
-
-        <li>
-          <time datetime="2026-10-08">Oct 8</time>
-          Business Networking Breakfast
-        </li>
-
-        <li>
-          <time datetime="2026-10-22">Oct 22</time>
-          Small Business Workshop
-        </li>
-
-        <li>
-          <time datetime="2026-11-05">Nov 5</time>
-          Member Expo
-        </li>
-
-      </ul>
-
-    </section>
-
-
-    <!-- Weather -->
-    <section class="weather" aria-labelledby="weather-title">
-
-      <h2 id="weather-title">
-        Weather in Benguela
-      </h2>
-
-      <p class="weather-now">
-        <span id="current-temp">--</span>&deg;C
-        <span id="weather-desc">Loading weather...</span>
-      </p>
-
-      <h3>
-        3-Day Forecast
-      </h3>
-
-      <ul id="forecast">
-        <li>Loading forecast...</li>
-      </ul>
-
-    </section>
-
-
-    <!-- Member spotlights -->
-    <section class="spotlights" aria-labelledby="spotlight-title">
-
-      <h2 id="spotlight-title">
-        Member Spotlights
-      </h2>
-
-      <div id="spotlight-cards" aria-live="polite">
-        <p class="loading-msg">
-          Loading featured members...
-        </p>
-      </div>
-
-    </section>
+    <dialog id="place-dialog" aria-label="Place details"></dialog>
 
   </main>
 

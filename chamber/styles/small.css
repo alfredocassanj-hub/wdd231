@@ -715,3 +715,114 @@ dialog li {
     background-color: #124657;
     text-decoration: underline;
 }
+/* =========================================
+   DISCOVER PAGE (mobile first)
+   ========================================= */
+
+.page-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Visit message */
+.visit-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+}
+
+.visit-message[hidden] {
+  display: none;
+}
+
+.visit-message p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.visit-message button {
+  padding: 0.25rem 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+/* Cards: named grid areas, one column on small screens */
+#discover-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin-inline: auto;
+  border-radius: 6px;
+}
+
+.card address {
+  margin: 0.75rem 0 0.5rem;
+  font-style: normal;
+  color: var(--color-muted);
+}
+
+.card p {
+  margin: 0 0 1rem;
+}
+
+.card button {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: var(--color-primary-dark);
+}
