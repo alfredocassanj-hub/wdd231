@@ -826,3 +826,8 @@ dialog li {
 .card button:hover {
   background-color: var(--color-primary-dark);
 }
+/* Footer contact links: contrast on dark background */
+.footer-info a {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
