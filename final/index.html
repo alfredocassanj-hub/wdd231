@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Road Safety Angola | Home</title>
+  <meta name="description" content="Learn road signs, common offences and emergency steps to stay safe on Angolan roads.">
+  <meta name="author" content="Alfredo Cassanje">
+  <meta property="og:title" content="Road Safety Angola | Home">
+  <meta property="og:description" content="Learn road signs, common offences and emergency steps to stay safe on Angolan roads.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alfredocassanj-hub.github.io/wdd231/final/">
+  <meta property="og:site_name" content="Road Safety Angola">
+  <meta property="og:image" content="https://alfredocassanj-hub.github.io/wdd231/final/images/share.png">
+  <meta property="og:image:alt" content="Road Safety Angola: signs, offences and emergency steps">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://alfredocassanj-hub.github.io/wdd231/final/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="36" height="36">Road Safety Angola</a>
+    <button id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="guide.html">Guide</a></li><li><a href="quiz.html">Quiz</a></li></ul></nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <img src="images/warning.svg" alt="Warning sign" width="120" height="120">
+      <div>
+        <h1>Know the road. Stay alive.</h1>
+        <p>Road crashes are a daily danger for drivers, motorcyclists, passengers and pedestrians in Angola. Learn the signs, understand common offences and know what to do in an emergency.</p>
+        <a class="btn cta" href="guide.html">Open the guide</a>
+        <a class="btn secondary" href="quiz.html">Take the quiz</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="tips-title">
+      <h2 id="tips-title">Four habits that save lives</h2>
+      <div class="tips">
+        <article class="tip"><h3>Buckle up</h3><p>Everyone in the vehicle should wear a seatbelt on every trip, even short ones.</p></article>
+        <article class="tip"><h3>Wear a helmet</h3><p>Motorbike riders and passengers need a fastened helmet. Head injuries are the biggest danger.</p></article>
+        <article class="tip"><h3>Never drink and drive</h3><p>Alcohol slows your reactions. Choose a sober driver or a taxi.</p></article>
+        <article class="tip"><h3>Phone away</h3><p>A message can wait. Keep your eyes and hands on the road.</p></article>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="report-title">
+      <h2 id="report-title">Report a dangerous spot</h2>
+      <p>Know a road with a missing sign, a deep hole or a dangerous crossing? Tell us.</p>
+      <form action="thanks.html" method="get">
+        <p><label for="name">Your name</label><input type="text" id="name" name="name" required autocomplete="name"></p>
+        <p><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"></p>
+        <p><label for="area">Neighbourhood or road</label><input type="text" id="area" name="area" required></p>
+        <p><label for="type">Type of problem</label>
+          <select id="type" name="type" required>
+            <option value="">Choose one</option>
+            <option>Missing or damaged sign</option>
+            <option>Pothole or damaged road</option>
+            <option>Dangerous crossing</option>
+            <option>Broken traffic light</option>
+            <option>Other</option>
+          </select></p>
+        <p><label for="message">Description</label><textarea id="message" name="message" rows="4" minlength="10" required></textarea></p>
+        <button class="btn" type="submit">Send report</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Alfredo Cassanje | WDD 231 Final Project</p>
+    <p>Last modified: <span id="modified"></span></p>
+    <p class="footer-links">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a>
+      <a href="attributions.html">Attributions</a>
+      <a href="https://www.linkedin.com/in/alfredo-cassanje-0b2067173/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/alfredo.chanegro" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </footer>
+  <script type="module" src="js/navigation.js"></script>
+
+</body>
+</html>

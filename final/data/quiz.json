@@ -1,0 +1,12 @@
+{"questions":[
+{"q":"What must you do at a red traffic light?","options":["Slow down and continue","Stop behind the line","Honk and pass","Stop only if cars are coming"],"answer":1,"explain":"A red light always means stop behind the line."},
+{"q":"A triangular sign with a red border is a...","options":["Warning sign","Mandatory sign","Parking sign","Information sign"],"answer":0,"explain":"Triangular signs with a red border warn about danger ahead."},
+{"q":"A round blue sign with a white symbol means...","options":["Prohibition","Danger","Mandatory instruction","End of road"],"answer":2,"explain":"Round blue signs tell you what you must do."},
+{"q":"Who must wear a seatbelt?","options":["Only the driver","Only front passengers","Everyone in the vehicle","Only on the highway"],"answer":2,"explain":"Every occupant should wear a seatbelt on every trip."},
+{"q":"What is the safest choice when you have been drinking?","options":["Drive slowly","Drive a short distance","Do not drive","Drive at night only"],"answer":2,"explain":"Alcohol and driving never mix. Use a sober driver or a taxi."},
+{"q":"Who should wear a helmet on a motorbike?","options":["Only the rider","Only the passenger","Rider and passenger","Nobody on short trips"],"answer":2,"explain":"Both rider and passenger need a fastened helmet."},
+{"q":"A pedestrian is on the crossing. You should...","options":["Honk and pass","Speed up","Stop and let them cross","Pass behind them quickly"],"answer":2,"explain":"Pedestrians on a crossing have priority."},
+{"q":"Your car breaks down on a busy road. First, you should...","options":["Stand in front of the car","Switch on hazard lights and move to safety","Sleep in the car","Wait without any signals"],"answer":1,"explain":"Make the vehicle visible and keep away from traffic."},
+{"q":"Is it safe to hold a phone while driving?","options":["Yes, for short calls","Yes, in slow traffic","No, never","Yes, if the road is empty"],"answer":2,"explain":"Holding a phone distracts you and is an offence."},
+{"q":"After a serious accident, what comes first?","options":["Make the area safe and call the emergency services","Move all injured people","Leave the scene","Take photos only"],"answer":0,"explain":"Safety first, then call for help. Do not move seriously injured people."}
+]}

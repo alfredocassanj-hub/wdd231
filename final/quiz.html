@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Road Safety Quiz | Road Safety Angola</title>
+  <meta name="description" content="Test your knowledge of road signs and traffic rules with a ten-question quiz.">
+  <meta name="author" content="Alfredo Cassanje">
+  <meta property="og:title" content="Road Safety Quiz | Road Safety Angola">
+  <meta property="og:description" content="Test your knowledge of road signs and traffic rules with a ten-question quiz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alfredocassanj-hub.github.io/wdd231/final/quiz.html">
+  <meta property="og:site_name" content="Road Safety Angola">
+  <meta property="og:image" content="https://alfredocassanj-hub.github.io/wdd231/final/images/share.png">
+  <meta property="og:image:alt" content="Road Safety Angola: signs, offences and emergency steps">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://alfredocassanj-hub.github.io/wdd231/final/quiz.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="36" height="36">Road Safety Angola</a>
+    <button id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="guide.html">Guide</a></li><li><a href="quiz.html">Quiz</a></li></ul></nav>
+  </header>
+  <main id="main">
+    <h1>Road safety quiz</h1>
+    <p>Ten questions to test what you know. Your best score is saved on this device.</p>
+    <p id="best-score" class="tag"></p>
+    <div class="quiz-layout">
+      <section id="quiz" class="panel" aria-live="polite"><p>Loading quiz...</p></section>
+      <aside class="panel" aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <ul>
+          <li>Choose one answer and select <strong>Check answer</strong>.</li>
+          <li>Read the explanation, then continue.</li>
+          <li>Score 8 or more to pass.</li>
+        </ul>
+        <p>Not sure about an answer? Review the <a href="guide.html">guide</a> first.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Alfredo Cassanje | WDD 231 Final Project</p>
+    <p>Last modified: <span id="modified"></span></p>
+    <p class="footer-links">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a>
+      <a href="attributions.html">Attributions</a>
+      <a href="https://www.linkedin.com/in/alfredo-cassanje-0b2067173/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/alfredo.chanegro" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </footer>
+  <script type="module" src="js/navigation.js"></script>
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>
