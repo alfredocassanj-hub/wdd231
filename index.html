@@ -2,303 +2,164 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Benguela Chamber of Commerce | Member Directory</title>
 
-<meta
-name="description"
-content="Explore the Benguela Chamber of Commerce member directory and discover local businesses, organizations, services, and contact information."
+<meta name="description" content="WDD 231 course home page for Alfredo Cassanje, a Web Frontend Development student from Angola.">
+<meta name="author" content="Alfredo Cassanje">
 
->
+<title>WDD 231 | Alfredo Cassanje</title>
 
-  <meta name="author" content="Alfredo Cassanje">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Open Graph / Facebook Meta Tags -->
+<!-- CSS -->
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
 
-<meta
-property="og:title"
-content="Benguela Chamber of Commerce | Member Directory"
+<!-- JavaScript -->
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/courses.js" defer></script>
 
->
-
-<meta
-property="og:description"
-content="Explore businesses and organizations that are members of the Benguela Chamber of Commerce."
-
->
-
-<meta
-property="og:image"
-content="https://alfredocassanj-hub.github.io/wdd231/chamber/images/cafe-atlantico.svg"
-
->
-
-<meta
-property="og:url"
-content="https://alfredocassanj-hub.github.io/wdd231/chamber/directory.html"
-
->
-
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-
-  <link
-    rel="icon"
-    href="icons/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <!-- CSS -->
-
-  <!-- Normalize must be loaded first -->
-
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
-  <!-- JavaScript -->
-
-  <script src="scripts/navigation.js" defer></script>
-
-  <script src="scripts/date.js" defer></script>
-
-  <script src="scripts/directory.js" defer></script>
 
 </head>
 
 <body>
 
-  <!-- ==============================
-       HEADER
-       ============================== -->
+<header>
+    <div class="header-content">
 
-  <header class="site-header">
+        <div class="profile">
+            <img src="images/logo.svg" alt="WDD 231 course logo">
+            <span>Alfredo Cassanje</span>
+        </div>
 
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
 
-<div class="header-brand">
+    </div>
 
-  <img
-    src="icons/favicon.svg"
-    alt="Benguela Chamber of Commerce logo"
-    class="logo"
-    width="48"
-    height="48"
-  >
+    <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html" id="chamber-link">Chamber</a>
+        <a href="final/index.html" id="final-link">Final</a>
+    </nav>
+</header>
 
-  <div class="brand-text">
-    <p class="site-title">Benguela Chamber of Commerce</p>
-    <p class="site-subtitle">Business • Community • Growth</p>
-  </div>
+<main>
 
-</div>
+    <h1>Home</h1>
 
-<!-- Mobile Navigation Button -->
-<button
-  id="menu"
-  aria-label="Open navigation menu"
-  aria-expanded="false"
->
-  <span></span>
-</button>
+    <div class="home-grid">
 
-<!-- Main Navigation -->
-<nav id="navigation" aria-label="Main navigation">
+        <section class="card">
+            <h2>About Me</h2>
 
-  <ul>
+            <p>
+                My name is Alfredo Cassanje. I am from Angola and I am studying
+                software development and web technologies. I enjoy learning
+                programming, building websites, and developing solutions that
+                can help people and organizations.
+            </p>
 
-    <li>
-      <a href="index.html">Home</a>
-    </li>
+            <p>
+                This course is an opportunity for me to improve my skills in
+                HTML, CSS, JavaScript, responsive web design, accessibility,
+                and modern web development.
+            </p>
+        </section>
 
-    <li>
-      <a
-        href="directory.html"
-        class="active"
-        aria-current="page"
-      >
-        Directory
-      </a>
-    </li>
+        <section class="card">
+            <h2>Student Photo</h2>
 
-    <li>
-      <a href="join.html">Join</a>
-    </li>
+            <img
+                src="images/alfredo.jpg"
+                alt="Alfredo Cassanje"
+                class="student-photo"
+            >
+        </section>
 
-  </ul>
+    </div>
 
-</nav>
+    <section class="card certificate">
 
-  </header>
+        <h2>Web and Computer Programming Certificate</h2>
 
-  <!-- ==============================
-       MAIN CONTENT
-       ============================== -->
+        <div class="course-buttons">
 
-  <main>
+            <button id="all-courses" type="button">
+                All Courses
+            </button>
 
+            <button id="wdd-courses" type="button">
+                WDD Courses
+            </button>
 
-<!-- Directory Heading and View Controls -->
-<section class="directory-toolbar">
+            <button id="cse-courses" type="button">
+                CSE Courses
+            </button>
 
-  <div class="directory-heading">
+        </div>
 
-    <h1>Member Directory</h1>
+        <p class="credits">
+            Total Credits:
+            <span id="total-credits">0</span>
+        </p>
+
+        <div id="course-container" class="course-grid"></div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+
+        <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+        >
+            GitHub
+        </a>
+
+        <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+        >
+            LinkedIn
+        </a>
+
+        <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            Facebook
+        </a>
+
+    </div>
 
     <p>
-      Discover businesses and organizations that are part of the
-      Benguela Chamber of Commerce.
+        &copy; <span id="currentyear"></span>
+        Alfredo Cassanje | Angola
     </p>
 
-  </div>
+    <p id="lastModified">
+        Last Modified:
+    </p>
 
-
-  <!-- Grid / List Controls -->
-  <div
-    class="view-toggle"
-    role="group"
-    aria-label="Directory view options"
-  >
-
-    <button
-      id="grid-btn"
-      class="view-btn active"
-      type="button"
-      aria-pressed="true"
-      aria-label="Display members in grid view"
-      title="Grid View"
-    >
-      <span aria-hidden="true">▦</span>
-      <span class="button-label">Grid</span>
-    </button>
-
-
-    <button
-      id="list-btn"
-      class="view-btn"
-      type="button"
-      aria-pressed="false"
-      aria-label="Display members in list view"
-      title="List View"
-    >
-      <span aria-hidden="true">☰</span>
-      <span class="button-label">List</span>
-    </button>
-
-  </div>
-
-</section>
-
-
-<!-- ==============================
-     MEMBER DIRECTORY
-     ============================== -->
-<section
-  id="directory-container"
-  class="directory grid-view"
-  aria-live="polite"
-  aria-label="Chamber member directory"
->
-
-  <p class="loading-msg">
-    Loading chamber members...
-  </p>
-
-</section>
-
-  </main>
-
-  <!-- ==============================
-       FOOTER
-       ============================== -->
-
-  <footer class="site-footer">
-
-
-<!-- Contact Information -->
-<div class="footer-info">
-
-  <h2>Benguela Chamber of Commerce</h2>
-
-  <address>
-    Rua Cerveira Pinto, 100<br>
-    Benguela, Angola
-  </address>
-
-  <p>
-    Phone:
-    <a href="tel:+244900000000">
-      +244 900 000 000
-    </a>
-  </p>
-
-  <p>
-    Email:
-    <a href="mailto:info@benguelachamber.example">
-      info@benguelachamber.example
-    </a>
-  </p>
-
-</div>
-
-
-<!-- Social Links -->
-<div class="footer-social">
-
-  <h2>Connect With Us</h2>
-
-  <a
-    href="https://github.com/alfredocassanj-hub"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    GitHub
-  </a>
-
-  <a
-    href="#"
-    aria-label="LinkedIn"
-  >
-    LinkedIn
-  </a>
-
-  <a
-    href="#"
-    aria-label="Facebook"
-  >
-    Facebook
-  </a>
-
-</div>
-
-
-<!-- Development Information -->
-<div class="footer-dev">
-
-  <p>
-    <strong>Alfredo Cassanje</strong>
-  </p>
-
-  <p>
-    WDD 231 - Web Frontend Development
-  </p>
-
-  <p>
-    &copy;
-    <span id="currentyear"></span>
-    Benguela Chamber of Commerce
-  </p>
-
-  <p>
-    Last Modification:
-    <span id="lastModified"></span>
-  </p>
-
-</div>
-
-  </footer>
+</footer>
 
 </body>
 </html>
